@@ -11,16 +11,20 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="loading.min.css">
     <title>PASCAL | Lomba</title>
-
-    <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <body>
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- izmir animation -->
+    <link rel="stylesheet" href="izmir-min.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <body>
+    <div class="loader">
+      <img class="ld ld-bounce" src="img/logo.png" alt="" style="width: 30%" />
+    </div>
     <!-- Navbar -->
-
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" data-aos="fade-down" style="background-color: rgb(107, 62, 4)">
       <div class="container">
         <a class="navbar-brand" href="https://fajarharapan.sch.id/" target="_blank">
@@ -44,14 +48,15 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Download</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Surat Orinsinalitas</a></li>
-                <li><a class="dropdown-item" href="#">Logo Pascal2022</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/11w9Pp3vOCvWdbWhVEXEFiFQlhbJ9RyVi/edit?usp=sharing&ouid=118332015259800498982&rtpof=true&sd=true">Surat Orinsinalitas</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/1rQ4D7uiy7YiJaxcgIDwXv6WwdKqpbyO4/view?usp=sharing">Logo Pascal2022</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/13aK73SKGUKrcoi7pvjuxLroXFIr8qlzW/edit?usp=sharing&ouid=118332015259800498982&rtpof=true&sd=true">Juknis</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="selom.html">Syarat & Ketentuan</a></li>
+                <li><a class="dropdown-item" href="lomba.html">Syarat & Ketentuan</a></li>
                 <li><a class="dropdown-item" href="registration.html">Pendaftaran PASCAL</a></li>
               </ul>
             </li>
@@ -88,53 +93,65 @@
                     <div class="accordion-body">
                         <div class="row mt-4">
                           <!-- card -->
-                        <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                              <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                              <img src="img/lomba/tulisan/komsi.png" class="card-img-top" alt="Komsi">
-                              <div class="card-body">
-                              <a href="lomba/komsi.html" class="btn btn-warning">KOMSI</a>
-                              </div>
-                              </div>
-                        </div>  
-                        <div class="col-md-4 mb-5" data-aos="fade-up-left" data-aos-duration="1500">
-                              <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                              <img src="img/lomba/tulisan/cc.png" class="card-img-top" alt="CC">
-                              <div class="card-body">
-                              <a href="lomba/ccsmp.html" class="btn btn-warning">CC AMIPA.ING</a>
-                              </div>
-                              </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/komsi.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/komsi.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>Komsi</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                              <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                              <img src="img/lomba/tulisan/mhq.png" class="card-img-top" alt="MHQ">
-                              <div class="card-body">
-                              <a href="lomba/mhq.html" class="btn btn-warning">MHQ</a>
-                              </div>
-                              </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/ccsmp.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/cc.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>CC AMIPA.ING</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                              <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                              <img src="img/lomba/tulisan/mtq.png" class="card-img-top" alt="MTQ">
-                              <div class="card-body">
-                              <a href="lomba/mtq.html" class="btn btn-warning">MTQ</a>
-                              </div>
-                              </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/mhq.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/mhq.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>MHQ</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-4" data-aos="fade-up-right" data-aos-duration="1500" >
-                            <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                            <img src="img/lomba/tulisan/c2fh.png" class="card-img-top" alt="C2FH">
-                            <div class="card-body">
-                            <a href="lomba/c2fhsmp.html" class="btn btn-warning">C2FH</a>
-                            </div>
-                            </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/mtq.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/mtq.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>MTQ</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
                         </div>
-                        <div class="col-md-4 mb-5" data-aos="fade-up-left" data-aos-duration="1500">
-                              <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                              <img src="img/lomba/tulisan/ciptapuisi.png" class="card-img-top" alt="Cipta Puisi">
-                              <div class="card-body">
-                              <a href="lomba/puisi.html" class="btn btn-warning">CIPTA PUISI</a>
-                              </div>
-                              </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/c2fhsmp.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/c2fh.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>C2FH</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <a href="lomba/puisi.html">
+                            <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                            <img  src="img/lomba/tulisan/ciptapuisi.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                            <figcaption class="c4-layout-center">
+                            <div class="c4-reveal-up c4-delay-100"><h3>Cipta Puisi</h3></div>
+                            </figcaption>
+                            </figure>
+                            </a>
                         </div>
                 </div>
                 </div>
@@ -151,79 +168,98 @@
             <div class="row mt-4">
       
               <!-- card -->
-                <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                  <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                  <img src="img/lomba/tulisan/ratohjaroe.png" class="card-img-top" alt="Ratoh Jaroe">
-                  <div class="card-body">
-                  <a href="lomba/ratoh.html" class="btn btn-warning">RATOH JAROE</a>
-                  </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up-left" data-aos-duration="1500">
-                  <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                  <img src="img/lomba/tulisan/cc.png" class="card-img-top" alt="CC">
-                  <div class="card-body">
-                  <a href="lomba/ccsma.html" class="btn btn-warning">CC AMIPA.ING</a>
-                  </div>
-                  </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up-right" data-aos-duration="1500" >
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/c2fh.png" class="card-img-top" alt="C2FH">
-                    <div class="card-body">
-                    <a href="lomba/c2fhsma.html" class="btn btn-warning">C2FH</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/debate.png" class="card-img-top" alt="Debate">
-                    <div class="card-body">
-                    <a href="lomba/debat.html" class="btn btn-warning">DEBAT</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/nasyid.png" class="card-img-top" alt="Nasyid">
-                    <div class="card-body">
-                    <a href="lomba/nasyid.html" class="btn btn-warning">NASYID</a>
-                    </div>
-                    </div>
-                </div> 
-                <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/vocalsolo.png" class="card-img-top" alt="Vocal Solo">
-                    <div class="card-body">
-                    <a href="lomba/vocal.html" class="btn btn-warning">VOCAL SOLO</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up-right" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/muspus.png" class="card-img-top" alt="Muspus">
-                    <div class="card-body">
-                    <a href="lomba/musik.html" class="btn btn-warning">MUSPUS</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/syarhilquran.png" class="card-img-top" alt="Syarhil">
-                    <div class="card-body">
-                    <a href="lomba/syahril.html" class="btn btn-warning">SYARHIL QURAN</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5" data-aos="fade-up-left" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/filmpendek.png" class="card-img-top" alt="Film Pendek">
-                    <div class="card-body">
-                    <a href="lomba/film.html" class="btn btn-warning">FILM PENDEK</a>
-                    </div>
-                    </div>
-                </div>
-                
+              <div class="col-md-4 mb-5">
+                <a href="lomba/ratoh.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/ratohjaroe.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Ratoh Jaroe</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/ccsma.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/cc.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>CC AMIPA.ING</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/c2fhsma.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/c2fh.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>C2FH</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/debat.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/debate.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>PDC</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/nasyid.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/nasyid.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Nasyid</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/vocal.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/vocalsolo.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Vocal Solo</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/musik.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/muspus.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>MUSPUS</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/syahril.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/syarhilquran.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Syarhil Qur'an</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+            <div class="col-md-4 mb-5">
+                <a href="lomba/film.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/filmpendek.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>F2SN</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+            </div>
+              <!-- akhir card sma -->
+
         </div>
         </div>
         </div>
@@ -237,22 +273,29 @@
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row mt-4">
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1500" >
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/triviaquiz.png" class="card-img-top" alt="Trivia Quiz">
-                    <div class="card-body">
-                    <a href="lomba/quiz.html" class="btn btn-warning">TRIVIA QUIZ</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up-left" data-aos-duration="1500" >
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/rRankingsatu.png" class="card-img-top" alt="Ranking 1">
-                    <div class="card-body">
-                    <a href="lomba/rank.html" class="btn btn-warning">RANKING 1</a>
-                    </div>
-                    </div>
-                </div>
+                
+              <!-- card -->
+              <div class="col-md-4 mb-5">
+                <a href="lomba/quiz.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/triviaquiz.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Trivia Quiz</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+              </div>
+              <div class="col-md-4 mb-5">
+                <a href="lomba/rank.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/rRankingsatu.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Ranking 1</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+              </div>
+              <!-- akhir card -->
             
             </div>
             </div>
@@ -267,22 +310,28 @@
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <div class="row mt-4">
-                <div class="col-md-4 mb-4" data-aos="fade-up-right" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/fotografi.png" class="card-img-top" alt="Fotografi">
-                    <div class="card-body">
-                    <a href="lomba/fot.html" class="btn btn-warning">PHOTOGRAPHY</a>
-                    </div>
-                    </div>           
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up-left" data-aos-duration="1500">
-                    <div class="card w-75 m-auto border-warning" style="background-color: #f5d6a8;">
-                    <img src="img/lomba/tulisan/essai.png" class="card-img-top" alt="Essai">
-                    <div class="card-body">
-                    <a href="lomba/essai.html" class="btn btn-warning">ESAI</a>
-                    </div>
-                    </div>
-                </div>  
+                <!-- card -->
+              <div class="col-md-4 mb-5">
+                <a href="lomba/fot.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/fotografi.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Fotografi</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+              </div>
+              <div class="col-md-4 mb-5">
+                <a href="lomba/essai.html">
+                <figure class="c4-izmir c4-border-cc-2 c4-image-rotate-right c4-gradient-bottom-right" tabindex="0">
+                <img  src="img/lomba/tulisan/essai.png" alt="Sample Image"  style="background-color: #f5d6a8;">
+                <figcaption class="c4-layout-center">
+                <div class="c4-reveal-up c4-delay-100"><h3>Esai</h3></div>
+                </figcaption>
+                </figure>
+                </a>
+              </div>
+              <!-- akhir card -->
       </div>
       </div>
       </div>
@@ -357,6 +406,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var loader = document.querySelector(".loader");
+
+      window.addEventListener("load", vanish);
+
+      function vanish() {
+        loader.classList.add("disappear");
+      }
     </script>
 
     <!-- GSAP -->

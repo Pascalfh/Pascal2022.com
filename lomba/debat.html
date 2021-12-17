@@ -11,19 +11,23 @@
     <!-- my css -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../loading.min.css">
     <title>PASCAL | DEBAT</title>
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <body>
+  
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+<body>
+  <div class="loader">
+    <img class="ld ld-bounce" src="../img/logo.png" alt="" style="width: 30%" />
+  </div>
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" data-aos="fade-down" style="background-color: #6b3e04">
       <div class="container">
-        <a class="navbar-brand" href="https://fajarharapan.web.id/" target="_blank">
+        <a class="navbar-brand" href="https://fajarharapan.sch.id/" target="_blank">
           <img src="../img/logofh.png" alt="FH LOGO" width="30" height="30" class="d-inline-block align-text-top me-1" />
           SMAN 10 Fajar Harapan
         </a>
@@ -139,7 +143,7 @@
 
 
         
-        <li class="list-inline-item me-5"><a href="%"><button data-aos="zoom-in-down" data-aos-duration="1500" type="button" class="btn btn-dark btn-lg" style="background-color: rgb(107, 62, 4)">Download</button></a>
+        <li class="list-inline-item me-5"><a target="_blank" href="https://docs.google.com/document/d/1-w7ed3JkLBzo1tbByWSew5aCwQJRtC9i/edit?usp=sharing&ouid=118332015259800498982&rtpof=true&sd=true"><button data-aos="zoom-in-down" data-aos-duration="1500" type="button" class="btn btn-dark btn-lg" style="background-color: rgb(107, 62, 4)">Download</button></a>
       </li>
 
         <li class="list-inline-item"><a href="../registration.html"><button data-aos="zoom-in-down" data-aos-duration="1500" type="button" class="btn btn-dark btn-lg" style="background-color: rgb(107, 62, 4)">Lanjutkan!</button></a>
@@ -246,6 +250,18 @@
       function topFunction() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var loader = document.querySelector(".loader");
+
+      window.addEventListener("load", vanish);
+
+      function vanish() {
+        loader.classList.add("disappear");
       }
     </script>
   </body>

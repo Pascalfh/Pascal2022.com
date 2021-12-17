@@ -11,6 +11,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="loading.min.css" />
     <title>PASCAL</title>
 
     <!-- AOS Animation -->
@@ -20,6 +21,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
   </head>
   <body class="index">
+    <div class="loader">
+      <img class="ld ld-bounce" src="img/logo.png" alt="" style="width: 30%" />
+    </div>
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" data-aos="fade-down" style="background-color: rgb(107, 62, 4)">
@@ -45,8 +49,9 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Download</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Surat Orinsinalitas</a></li>
-                <li><a class="dropdown-item" href="#">Logo Pascal2022</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/11w9Pp3vOCvWdbWhVEXEFiFQlhbJ9RyVi/edit?usp=sharing&ouid=118332015259800498982&rtpof=true&sd=true">Surat Orinsinalitas</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://drive.google.com/file/d/1rQ4D7uiy7YiJaxcgIDwXv6WwdKqpbyO4/view?usp=sharing">Logo Pascal2022</a></li>
+                <li><a class="dropdown-item" target="_blank" href="https://docs.google.com/document/d/13aK73SKGUKrcoi7pvjuxLroXFIr8qlzW/edit?usp=sharing&ouid=118332015259800498982&rtpof=true&sd=true">Juknis</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -128,6 +133,15 @@
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to(".lead", { duration: 2, delay: 1, text: "'Brings Back The G'old Memories'" });
+    </script>
+    <script>
+      var loader = document.querySelector(".loader");
+
+      window.addEventListener("load", vanish);
+
+      function vanish() {
+        loader.classList.add("disappear");
+      }
     </script>
   </body>
 </html>
