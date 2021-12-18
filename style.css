@@ -14,6 +14,11 @@ body {
 .jumbotron {
   padding-top: 4rem;
   background-color: #ff910080;
+  overflow: hidden;
+}
+
+.jumbotronindex {
+  overflow: hidden;
 }
 
 .ignite {
