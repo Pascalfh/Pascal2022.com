@@ -7,6 +7,18 @@ body {
   background-color: #f5d6a8;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6b3e04;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .display-4 {
   font-family: "Cash-Currency";
 }
@@ -82,18 +94,6 @@ body {
 
 #wajib {
   list-style-type: disc;
-}
-
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #6b3e04;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .disappear {
