@@ -133,7 +133,7 @@
               </div>
               <div class="mb-3">
                 <label for="Asal Sekolah" class="form-label">Asal Sekolah</label>
-                <input type="text" class="form-control" id="Asal Sekolah" placeholder="Asal Sekolah" name="sekolah" required />
+                <input type="text" class="form-control" id="Asal_Sekolah" placeholder="Asal Sekolah" name="sekolah" required />
               </div>
               <div class="mb-3">
                 <label for="Email" class="form-label">Email</label>
@@ -141,11 +141,11 @@
               </div>
               <div class="mb-3">
                 <label for="No HP" class="form-label">No HP</label>
-                <input type="text" class="form-control" id="No HP" placeholder="Ketikkan Titik Di Akhir" name="no_hp" required />
+                <input type="text" class="form-control" id="NoHP" placeholder="Ketikkan Titik Di Akhir" name="no_hp" required />
               </div>
               <div class="mb-3">
                 <label for="Tanggal Lahir" class="form-label">Tanggal Lahir</label>
-                <input type="date" class="form-control" id="Tanggal Lahir" name="ttd" required />
+                <input type="date" class="form-control" id="tanggalLahir" name="ttd" required />
               </div>
               <div class="mb-3"><label for="jk">Jenis Kelamin</label></div>
 
@@ -184,7 +184,7 @@
                   <option>Debat Bahasa Inggris (SMA)</option>
                   <option>C2FH (SMA)</option>
                   <option>Nasyid (SMA)</option>
-                  <option>Vocal Solo (SMP)</option>
+                  <option>Vocal Solo (SMA)</option>
                   <option>Musikalisasi Puisi (SMA)</option>
                   <option>Syarhil Quran (SMA)</option>
                   <option>Film Pendek (SMA)</option>
@@ -202,7 +202,7 @@
                 <textarea class="form-control" id="info" name="info" rows="3"></textarea>
               </div>
               <p class="my-3">Biaya pendaftaran dapat ditransfer ke rekening <strong> Bank Aceh/a.n Cut Dhiya Nabila TS/ No Rek 01002210017734</strong>.</p>
-              <button type="submit" class="btn btn-warning btn-daftar">Daftar</button>
+              <button onclick="checkForm" type="submit" class="btn btn-warning btn-daftar">Daftar</button>
               <button class="btn btn-warning btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
@@ -285,6 +285,7 @@
       gsap.registerPlugin(TextPlugin);
       gsap.to(".lead", { duration: 2, delay: 1, text: "'Brings Back The G'old Memories'" });
     </script>
+
     <!-- Google Sheet -->
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxhstm6T1SZxZJAK5zpOLfkNiqm3ZcaDg9pNN7j3FlPBV11SqaWJ6lJRcYqKHQnWf8u/exec";
