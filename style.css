@@ -7,6 +7,14 @@ body {
   background-color: #f5d6a8;
 }
 
+footer > .row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
 .loader {
   position: fixed;
   top: 0;
