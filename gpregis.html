@@ -121,6 +121,10 @@
                 <input type="text" class="form-control" id="name" placeholder="Nama Lengkap" name="nama" required />
               </div>
               <div class="mb-3">
+                <label for="name" class="form-label">Nama Kelompok</label>
+                <input type="text" class="form-control" id="name" placeholder="Nama Kelompok" name="gp_nama" required />
+              </div>
+              <div class="mb-3">
                 <label for="NISN" class="form-label">NISN</label>
                 <input type="number" class="form-control" id="NISN" placeholder="Ketikkan Titik Di Akhir" name="nisn" required />
               </div>
@@ -134,7 +138,7 @@
               </div>
               <div class="mb-3">
                 <label for="No HP" class="form-label">No HP</label>
-                <input type="number" class="form-control" id="NoHP" placeholder="Ketikkan Titik Di Akhir" name="no_hp" required />
+                <input type="number" class="form-control" id="NoHP" placeholder="Ketikkan Titik Di Akhir" name="no_hp" minlength="11" maxlength="13" required />
               </div>
               <div class="mb-3">
                 <label for="Tanggal Lahir" class="form-label">Tanggal Lahir</label>
@@ -166,40 +170,16 @@
               <div class="mb-3">
                 <select class="form-select" aria-label="Default select example" name="lomba" required>
                   <option selected>Pilih Lomba</option>
-                  <option>Kompetisi Sains dan Inggris (SMP)</option>
                   <option>CC AMIPA-ing (SMP)</option>
-                  <option>MHQ (SMP)</option>
-                  <option>MTQ (SMP)</option>
-                  <option>C2FH (SMP)</option>
-                  <option>Cipta Puisi (SMP)</option>
                   <option>Ratoh Jaroe (SMA)</option>
                   <option>CC AMIPA-ing (SMA)</option>
                   <option>Debat Bahasa Inggris (SMA)</option>
-                  <option>C2FH (SMA)</option>
                   <option>Nasyid (SMA)</option>
-                  <option>Vocal Solo (SMA)</option>
                   <option>Musikalisasi Puisi (SMA)</option>
                   <option>Syarhil Quran (SMA)</option>
-                  <option>Film Pendek (SMA)</option>
-                  <option>Trivia Quiz (SMP/SMA)</option>
-                  <option>Ranking 1 (SMP/SMA)</option>
-                  <option>ESSAI (Umum)</option>
-                  <option>Fotografi (Umum)</option>
                 </select>
                 <p class="mt-2 text-danger fw-bold">
                   <sup>*Note: Tambahkan titik Di akhir NISN dan No HP dan pastikan data anda benar!</sup>
-                </p>
-              </div>
-              <div class="mb-3">
-                <select name="komsi" class="form-select" aria-label="Default select example" required>
-                  <option selected>Pilih Bidang Komsi</option>
-                  <option>Matematika</option>
-                  <option>Fisika</option>
-                  <option>Biologi</option>
-                  <option>Bahasa Inggris</option>
-                </select>
-                <p class="mt-2 text-danger fw-bold">
-                  <sup>*Note: Khusus Lomba Komsi!</sup>
                 </p>
               </div>
               <div class="mb-3">
